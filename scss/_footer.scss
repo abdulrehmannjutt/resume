@@ -1,0 +1,36 @@
+footer{
+    
+    background-color: $blacky;
+    color: $white;
+    padding: 5rem;
+}
+
+.footer1{
+    @include space-evenly;
+
+    p{
+        display: inline;
+        margin-left: 1rem
+    }
+
+    pre{
+        display: inline;
+    }
+}
+
+.footer2{
+    @include space-evenly;
+}
+
+.footer3{
+    @include flexbox-center;
+}
+
+.footer4{
+    @include space-evenly;
+}
+
+.contact{
+    @include button;
+}
+

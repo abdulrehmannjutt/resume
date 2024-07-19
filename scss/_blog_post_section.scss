@@ -1,0 +1,39 @@
+.blog-post1{
+    
+    @include flexbox-center;
+    justify-content: space-evenly;
+
+    margin-top: 20px;
+}
+
+.view-more-post{
+    background-color: #5336FF;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+
+    &:hover{
+        background-color: rgb(2, 170, 236);
+    }
+
+    &::after {
+        position: relative;
+        
+        
+    }
+
+
+
+}
+
+.view-more-post{
+    margin-top: none;
+}
+
+.blog-post2{
+    margin-top: 20px;
+}

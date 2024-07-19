@@ -1,0 +1,151 @@
+.section-1{
+    @include space-evenly;
+    // justify-content: flex-start;
+
+    // margin-top: 15rem;
+    // margin-left: 5rem;
+    // margin: auto 0;
+    // margin-right: 10px;
+
+    // gap: 30rem;
+}
+
+.s1-c1{
+    margin-left: 7rem;
+}
+
+.project{
+    font-size: 5rem;
+    font-weight: bold;
+    color: $blacky;
+
+    // @include dot;
+}
+
+.project-intro{
+
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: $blacky;
+}
+
+
+
+.download {
+    margin-top: 20px;
+    background-color: #5336FF;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+
+    &:hover{
+        background-color: rgb(2, 170, 236);
+    }
+
+    &::after {
+        position: relative;
+        
+        
+    }
+
+
+
+}
+
+
+.sec-2{
+    @include flexbox-center;
+    position: relative;
+
+    // background-color: #5336FF;
+  
+    // justify-content: space-evenly;
+
+    // row-gap: 10%;
+    // column-gap: 10%;
+
+
+
+}
+
+
+.s2-i1{
+
+    position: absolute;
+    bottom: 19rem;
+    right: 60rem;
+
+}
+
+// .s2-i1-1{
+
+//     position: absolute;
+
+// }
+
+// .s2-i2{
+
+//     position: absolute;
+
+// }
+
+// .s2-i2-1{
+
+//     position: absolute;
+
+// }
+
+// .s2-i3{
+
+//     position: absolute;
+
+// }
+
+// .s2-i3-1{
+
+//     position: absolute;
+
+// }
+
+.s2-items{
+    @include flexbox-center;
+    flex-direction: column;
+
+    background-color: $white;
+    width: 10rem;
+    height: 6rem;
+    border-radius: 1rem;
+
+    .head{
+        font-size: 2rem;
+        font-weight: bold;
+        color: $purple;
+    }
+
+    // .para{
+    //     font-size: 1.5rem;
+    // }
+}
+
+
+.sec-3{
+    background-color: $white;
+    height: 50rem;
+    width: 15rem;
+}
+
+.grid-i{
+
+    background-color: $blacky;
+    color: white;
+
+    height: 150px;
+    width: 100px;
+
+}
+
+

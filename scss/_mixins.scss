@@ -1,0 +1,55 @@
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin space-evenly{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin space-between{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-start{
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin dot {
+
+    content: '.';
+    color: #5336FF;
+    position: absolute;
+}
+
+
+@mixin button{
+    background-color: #5336FF;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+
+    &:hover{
+        background-color: rgb(2, 170, 236);
+    }
+
+    &::after {
+        position: relative;
+        
+        
+    }
+
+
+
+}

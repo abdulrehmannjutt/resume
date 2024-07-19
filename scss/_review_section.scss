@@ -1,0 +1,12 @@
+.review-section{
+
+    @include flexbox-center;
+
+    height: 30.4rem;
+    gap: 2rem;
+    font-size: 2rem;
+    font-style: italic;
+    color: $white;
+
+    background-color: $purple;
+}

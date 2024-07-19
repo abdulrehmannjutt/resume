@@ -1,0 +1,27 @@
+
+
+.l-p{
+
+    @include flexbox-center;
+    font-size: 5rem;
+    font-weight: bold;
+    color: $blacky;
+    margin-top: 9rem;
+}
+
+ul{
+    @include flexbox-center;
+
+    margin-top: 5rem;
+    list-style-type: none;
+    font-size: 2rem;
+    gap: 6rem;
+}
+
+.grid-container-2{
+
+    margin-top: 5rem;
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+}

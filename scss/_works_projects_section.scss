@@ -1,0 +1,24 @@
+.work-projects{
+    @include flexbox-center;
+    padding: 4rem 0rem;
+
+
+    background-color: $blacky;
+
+    img{
+     margin-top: 2rem;   
+    }
+
+
+}
+
+.w-p{
+    font-size: 5rem;
+    font-weight: bold;
+    color: $white;
+}
+
+.w-p-2{
+    font-size: 2rem;
+    color: $white;
+}

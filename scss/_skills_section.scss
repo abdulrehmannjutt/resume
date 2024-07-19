@@ -1,0 +1,35 @@
+h3 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 5rem;
+    color: $blacky;
+}
+
+.skills-container-1, section .skills-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-container-2{
+    margin-top: 20px;
+}
+
+.skills {
+    height: 200px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .skills-content {
+    text-align: center;
+}
+
