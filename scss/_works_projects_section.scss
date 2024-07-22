@@ -1,6 +1,7 @@
 .work-projects{
     @include flexbox-center;
     padding: 4rem 0rem;
+    margin-top: 5rem;
 
 
     background-color: $blacky;
@@ -12,13 +13,90 @@
 
 }
 
+.w-p-1{
+    display: flex;
+    flex-direction: column;
+}
+
 .w-p{
     font-size: 5rem;
     font-weight: bold;
     color: $white;
+
+    &::after{
+        @include dot;
+    }
 }
 
 .w-p-2{
+
+    // @include flex-column;
+
+    margin-left: 15rem;
+    margin-bottom: 5rem;
     font-size: 2rem;
     color: $white;
+
+    p:nth-child(1){
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    p:nth-child(2){
+        margin-top: 1rem;
+        font-size: 1.7rem;
+
+    }
+
+    p:nth-child(3){
+        margin-top: 1rem;
+
+        font-size: 1.7rem;
+        font-weight: 600;
+        font-style: italic;
+
+    }
+
+   hr{
+    margin-top: 5rem;
+   }
+
+    p:nth-child(5){
+        margin-top: 5rem;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 3rem; 
+    }
+
+    p:nth-child(6){
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
+
+    p:nth-child(7){
+        margin-top: 1rem;
+
+        font-size: 1.7rem;
+        font-weight: 600;
+        font-style: italic;
+
+    }
+
+    .fa-arrow-right{
+
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+
+
+}
+
+.download2{
+    
+    @include button;
+
+    margin-top: 2rem;
+    width: 22.7rem;
+    height: 4.7rem;
 }

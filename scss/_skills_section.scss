@@ -1,10 +1,24 @@
-h3 {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+.section-1{
+
+    // margin-top: 50rem;
+}
+
+.skills-expertise {
+    @include flexbox-center;
     font-size: 5rem;
+    font-weight: bold;
     color: $blacky;
+    
+
+    // &::after{
+    //     @include dot;
+    // }
+
+}
+
+.skills-section{
+
+    margin-top: 5rem;
 }
 
 .skills-container-1, section .skills-container-2 {
@@ -19,10 +33,10 @@ h3 {
 }
 
 .skills {
-    height: 200px;
-    width: 250px;
+    width: 38.7rem;
+    height: 26.4rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 2rem;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -31,5 +45,18 @@ h3 {
 
 section .skills-content {
     text-align: center;
+}
+
+.skill-heading{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.skill-des{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: $blacky;
 }
 

@@ -1,12 +1,27 @@
 .review-section{
 
+    margin-top: 10rem;
     @include flexbox-center;
 
     height: 30.4rem;
-    gap: 2rem;
-    font-size: 2rem;
+    // gap: 2rem;
+    font-size: 1.7rem;
     font-style: italic;
     color: $white;
 
     background-color: $purple;
+}
+
+.review1, .review2{
+    
+    display: flex;
+    text-align: center;
+
+    margin: 0 10rem;
+}
+
+.review2{
+    @include flexbox-center;
+    margin-top: 2rem;
+    font-weight: bold;
 }

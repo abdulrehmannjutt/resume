@@ -1,36 +1,113 @@
-footer{
-    
+footer {
+
+    margin-top: 4rem;
     background-color: $blacky;
     color: $white;
     padding: 5rem;
 }
 
-.footer1{
+
+
+
+.footer1 {
     @include space-evenly;
 
-    p{
-        display: inline;
-        margin-left: 1rem
+
+    .footer1-1 {
+        font-size: 4rem;
+        font-weight: bold
     }
 
-    pre{
-        display: inline;
+    .footer1-2 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        // padding: 1rem;
     }
+
+    .footer1-2-2 {
+        margin-top: 2rem;
+    }
+
+    .footer1-3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        display: flex;
+    }
+
+    .location {
+        margin-left: 2rem;
+        // margin-bottom: 10rem;
+    }
+
+
+
+    .p-inline {
+        display: inline;
+        margin-left: 2rem;
+    }
+
 }
 
-.footer2{
+.footer2 {
     @include space-evenly;
+
+    margin-top: 5rem;
+
+
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-color: $blacky;
+        background-color: $blacky;
+        border: none;
+        border-bottom: 2px solid $white;
+    }
+
+    input:focus {
+        border: none;
+      }
 }
 
-.footer3{
-    @include flexbox-center;
+.footer3 {
+    margin-top: 5rem;
+
+    margin-left: 15rem;
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    textarea{
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-color: $blacky;
+        background-color: $blacky;
+        border: none;
+        border-bottom: 2px solid $white;
+    }
+
+    textarea:focus {
+        border: none;
+      }
 }
 
-.footer4{
+.footer4 {
+    margin-top: 5rem;
     @include space-evenly;
+
+    gap: 70rem;
 }
 
-.contact{
+.contact {
+    
     @include button;
 }
-
