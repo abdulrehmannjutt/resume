@@ -1,26 +1,39 @@
 footer {
-
-    margin-top: 4rem;
     background-color: $blacky;
     color: $white;
-    padding: 5rem;
+    padding: 10rem 5rem;
 }
 
 
 
 
 .footer1 {
-    @include space-evenly;
+    @include flexbox-center;
+    flex-wrap: wrap;
+    gap: 260px;
+
+
 
 
     .footer1-1 {
-        font-size: 4rem;
-        font-weight: bold
+        position: relative;
+        font-size: $headings;
+        font-weight: bold;
+
+        .f-c-1 {
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            background-color: rgba(83, 54, 255, 0.5);
+            right: 20.2rem;
+            border-radius: 70rem;
+            filter: blur(8rem);
+        }
     }
 
     .footer1-2 {
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: $paragraphs;
         // padding: 1rem;
     }
 
@@ -29,7 +42,7 @@ footer {
     }
 
     .footer1-3 {
-        font-size: 1.5rem;
+        font-size: $paragraphs;
         margin-top: 1rem;
         display: flex;
     }
@@ -49,65 +62,112 @@ footer {
 }
 
 .footer2 {
-    @include space-evenly;
+    @include flexbox-center;
+    flex-wrap: wrap;
+    gap: 20px;
+
 
     margin-top: 5rem;
 
 
 
     label {
-        font-size: 1.5rem;
+        font-size: $paragraphs;
     }
 
-    input{
+    input {
         width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
+        padding: 1.2rem 2rem;
+        margin: .8rem 0;
         box-sizing: border-box;
         border-color: $blacky;
         background-color: $blacky;
         border: none;
-        border-bottom: 2px solid $white;
+        border-bottom: .2rem solid $white;
     }
 
     input:focus {
         border: none;
-      }
+    }
+}
+
+.footer3-div {
+    display: flex;
+    justify-content: center;
 }
 
 .footer3 {
-    margin-top: 5rem;
 
-    margin-left: 15rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
 
     label {
-        font-size: 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        font-size: $paragraphs;
     }
 
-    textarea{
-        width: 90%;
-        padding: 12px 20px;
-        margin: 8px 0;
+    textarea {
+        width: 100%;
+        padding: 1.2rem 2rem;
         box-sizing: border-box;
         border-color: $blacky;
         background-color: $blacky;
         border: none;
-        border-bottom: 2px solid $white;
+        border-bottom: .2rem solid $white;
     }
 
     textarea:focus {
         border: none;
-      }
+    }
 }
 
 .footer4 {
     margin-top: 5rem;
-    @include space-evenly;
+    @include flexbox-center;
+    flex-wrap: wrap;
 
-    gap: 70rem;
+    gap: 900px;
+
+    .fa-plus {
+        color: $purple;
+
+    }
 }
 
 .contact {
-    
+
     @include button;
 }
+
+
+.footer4-2 {
+    // margin-top: 10rem;
+    position: relative;
+    // z-index: 1;
+
+    .f-c-2 {
+
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        background-color: rgba(255, 198, 71, 0.5);
+        top: 3rem;
+        right: 30rem;
+        bottom: 0rem;
+        border-radius: 70rem;
+        // z-index: -1;
+        filter: blur(8rem);
+
+    }
+
+
+}
+
+
+// @media only screen and  (){
+    
+// }
+
+
+

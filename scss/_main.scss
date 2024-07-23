@@ -1,7 +1,7 @@
 main {
     @include flexbox-center;
+    flex-wrap: wrap;
     // justify-content: space-evenly;
-    position: relative;
     gap: 13rem;
     margin: 0 5rem;
 }
@@ -9,13 +9,13 @@ main {
 
 .designation {
 
-    font-size: 3rem;
+    font-size: min(3rem, 2.083333333vw);
 
 }
 
 .name {
 
-    font-size: 8rem;
+    font-size: min(8rem, 5.555555556vw);
     font-weight: bolder;
 
     &::after {
@@ -24,28 +24,18 @@ main {
     }
 }
 
-.img-div{
-    position: relative;
-}
 
-img {
-    // max-width: 100%;
-    // height: auto;
-
-    // &::before {
-    //     position: absolute;
-    //     width:15px;
-    //     border-radius: 15px;
-    //     -moz-border-radius: 15px;
-    //     -webkit-border-radius: 15px;
-    //     background-color:#69b6d5;
-    // }
-}
-
-.my-img{
-    position: relative;
+.abdul{
     max-width: 90%;
     height: auto;
+}
+
+.m-2{
+    @include flexbox-center
+}
+
+.img-div{
+    position: relative;
 }
 
 .i1{
@@ -53,7 +43,7 @@ img {
     width: 35rem;
     height: 35rem;
     background-color: rgba(83, 54, 255, 0.5);
-    top: 10rem;
+    top: 13rem;
     right: 30rem;
     border-radius: 70rem;
     z-index: -1;
@@ -64,11 +54,11 @@ img {
 
 .i2{
     position: absolute;
-    width: 35rem;
+    width: 58.9rem;
     height: 35rem;
     background-color: rgba(255, 198, 71, 0.5);
     top: 6rem;
-    left: 25rem;
+    left: 30rem;
     border-radius: 70rem;
     z-index: -1;
     filter: blur(8rem);
@@ -79,34 +69,13 @@ img {
 .intro {
 
     color: $blacky;
-    font-size: 1.6rem;
+    font-size: $paragraphs;
 
 }
 
 .story {
-    font-size: 1.6rem;
+    font-size: $paragraphs;
     font-weight: bolder;
 
     color: $purple;
 }
-
-
-
-
-
-
-// @media only screen and (max-width: 768px) {
-
-
-//     .name {
-
-//         font-size: 3rem;
-    
-//         &::after {
-    
-//             @include dot;
-//         }
-//     }
-    
-    
-// }

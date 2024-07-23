@@ -1,21 +1,107 @@
 .section-1{
-    @include space-evenly;
-    // justify-content: flex-start;
-
-    // margin-top: 15rem;
-    // margin-left: 5rem;
-    // margin: auto 0;
-    // margin-right: 10px;
-
-    // gap: 30rem;
+    @include flexbox-center;
+    flex-wrap: wrap;
+    // gap: 77rem;
 }
 
 .s1-c1{
-    margin-left: 7rem;
+    margin-left: 6rem;
 }
 
+.s1-c2{
+
+    margin-left: 65rem;
+    position: relative;
+    @include flexbox-center;
+
+   img{
+    border-radius: 2rem;
+   }
+
+   .expalination1, .expalination2, .expalination3{
+    @include flexbox-center;
+    flex-direction: column;
+    width: 16rem;
+    height: 7rem;
+    border-radius: 1.4rem;
+    background-color: $white;
+
+    p:nth-child(1){
+        color: $purple;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p:nth-child(2){
+        color: $blacky;
+        font-size: 1rem;
+        // font-weight: bold;
+    }
+   }
+}
+
+.digital{
+    position: absolute;
+    right: 40rem;
+    bottom: 20.5rem;
+}
+
+
+.expalination1 {
+    position: absolute;
+    right: 30.5rem;
+    bottom: 45rem;
+}
+
+
+.seo{
+    position: absolute;
+    top: 40.3rem;
+    right: 40rem;
+}
+
+.expalination2{
+    position: absolute;
+
+    top: 30.9rem;
+    right: 50rem;
+
+}
+
+.social{
+    position: absolute;
+    right: 10rem;
+    top: 25rem;
+    // left: 50%;
+}
+
+.expalination3{
+    position: absolute;
+    top: 55rem;
+    right: 25rem;
+    // left: 50%;
+}
+
+.plus{
+
+    display: flex;
+    justify-content: flex-end;
+    background-color: $white;    
+    color: $purple;
+
+    width: 20rem;
+    height: 66rem;
+    
+
+    
+}
+
+
+
+
+
 .project{
-    font-size: 5rem;
+    font-size: $headings;
     font-weight: bold;
     color: $blacky;
 
@@ -24,19 +110,19 @@
 
 .project-intro{
 
-    font-size: 1.6rem;
-    margin-top: 20px;
+    font-size: $paragraphs;
+    margin-top: 2rem;
     color: $blacky;
 }
 
 
 
 .download {
-    margin-top: 20px;
+    margin-top: 2rem;
     background-color: #5336FF;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 2rem;
     color: white;
     cursor: pointer;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -58,7 +144,7 @@
 
 
 .sec-2{
-    @include flexbox-center;
+    // @include flexbox-center;
     position: relative;
 
     // background-color: #5336FF;
@@ -143,8 +229,8 @@
     background-color: $blacky;
     color: white;
 
-    height: 150px;
-    width: 100px;
+    height: 15rem;
+    width: 10rem;
 
 }
 

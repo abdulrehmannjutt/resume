@@ -1,10 +1,16 @@
 .work-projects{
     @include flexbox-center;
-    padding: 4rem 0rem;
+    flex-wrap: wrap;
+    padding: 10rem 0rem;
     margin-top: 5rem;
 
 
     background-color: $blacky;
+
+    background-image: url('/images/Group\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: cover;
 
     img{
      margin-top: 2rem;   

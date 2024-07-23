@@ -1,7 +1,7 @@
 @import "variables";
+@import "fonts.scss";
 @import "colors";
 @import "mixins";
-@import "header";
 @import "main";
 @import "section-1";
 @import "skills_section";
@@ -10,6 +10,7 @@
 @import "review_section.scss";
 @import "blog_post_section.scss";
 @import "footer.scss";
+
 
 
 *{
@@ -23,20 +24,22 @@ html{
 }
 
 body{
-
+    
     
     font-family: "Plus Jakarta Sans", sans-serif;
     
     // width: 90%;
     // margin: 0 auto;
-
-
+    
+    
     background-color: #F5F5F5;
+    
+    overflow-x: hidden;
 }
 
 
 
-img {
-    // min-width: ;: 100%;
-    // height: auto;
-}
+
+
+
+@import "header";

@@ -5,8 +5,7 @@
 .blog-post1 {
 
     @include flexbox-center;
-    justify-content: space-evenly;
-    gap: 70rem;
+    gap: 75rem;
 
     p {
         font-size: 5rem;
@@ -29,9 +28,9 @@
 
 .view-more-post {
     background-color: #5336FF;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 2rem;
     color: white;
     cursor: pointer;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -60,18 +59,18 @@ section .blogs-container-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .blogs-container-2 {
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .blogs {
-    width: 387px;
-    height: 558px;
+    width: 38.7rem;
+    height: 55.8rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     // background-color: #FFFFFF;
     // display: flex;
     // justify-content: center;
@@ -82,13 +81,6 @@ section .blogs-container-2 {
 }
 
 .blogs-content {
-
-    // width: 500px;
-
-    // object-fit: contain;
-    // text-align: center;
-
-    // background-image: url('/images/blog1.jpg');
 
     img {
         border-radius: 2rem;
@@ -195,5 +187,5 @@ section .blogs-container-2 {
 
 .blog-post2 {
 
-    margin-top: 20px;
+    margin-top: 2rem;
 }
