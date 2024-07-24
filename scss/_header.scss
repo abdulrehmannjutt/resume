@@ -1,11 +1,14 @@
 header{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    // margin-left: 5rem;
+    // margin-right: 5rem;
+    padding: 0 5rem;
     // position: sticky;
     // top: 0;
     // left: 0;
     // z-index: 99;
 
+    // background-color: $blacky;
+    
     
 }
 
@@ -52,7 +55,7 @@ nav {
 
 
     @include space-between;
-    padding: 2rem 0;
+    padding: 1rem 0;
 
 }
 
@@ -138,13 +141,24 @@ header nav ul {
 }
 
 
+
+
 @media only screen and (max-width: 768px){
+
+   
+
     
     header{
 
-        .nav-container{
+        li{
             display: none;
         }
     }
+    
+    label{
+        font-size: 2rem;
+    }
+
+    
 
 }

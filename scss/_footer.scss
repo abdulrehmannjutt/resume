@@ -9,8 +9,8 @@ footer {
 
 .footer1 {
     @include flexbox-center;
-    flex-wrap: wrap;
-    gap: 260px;
+    justify-content: space-between;
+    // gap: 260px;
 
 
 
@@ -63,8 +63,9 @@ footer {
 
 .footer2 {
     @include flexbox-center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
 
 
     margin-top: 5rem;
@@ -91,19 +92,17 @@ footer {
     }
 }
 
-.footer3-div {
-    display: flex;
-    justify-content: center;
-}
+
 
 .footer3 {
 
+    
     margin-top: 5rem;
     flex-wrap: wrap;
 
     label {
-        display: flex;
-        justify-content: flex-start;
+        // display: flex;
+        // justify-content: flex-start;
         font-size: $paragraphs;
     }
 
@@ -124,10 +123,10 @@ footer {
 
 .footer4 {
     margin-top: 5rem;
-    @include flexbox-center;
-    flex-wrap: wrap;
-
-    gap: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7%;
 
     .fa-plus {
         color: $purple;
@@ -164,10 +163,12 @@ footer {
 
 }
 
-
-// @media only screen and  (){
+@media (max-width:425px) {
     
-// }
+    .footer2{
+        display: inline-block;
+    }
+}
 
 
 

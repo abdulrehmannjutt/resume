@@ -1,7 +1,8 @@
-@import "variables";
 @import "fonts.scss";
-@import "colors";
 @import "mixins";
+@import "variables";
+@import "header";
+@import "colors";
 @import "main";
 @import "section-1";
 @import "skills_section";
@@ -26,12 +27,7 @@ html{
 body{
     
     
-    font-family: "Plus Jakarta Sans", sans-serif;
-    
-    // width: 90%;
-    // margin: 0 auto;
-    
-    
+    font-family: "Plus Jakarta Sans", sans-serif;    
     background-color: #F5F5F5;
     
     overflow-x: hidden;
@@ -39,7 +35,13 @@ body{
 
 
 
+// @media only screen and (max-width:1052px) {
+    
+
+//     .i1{
+//         height: 10rem;
+//         width: 10rem;
+//     }
+// }
 
 
-
-@import "header";

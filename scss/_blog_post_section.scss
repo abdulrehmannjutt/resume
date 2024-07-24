@@ -5,7 +5,8 @@
 .blog-post1 {
 
     @include flexbox-center;
-    gap: 75rem;
+    justify-content: space-around;
+    // gap: 75rem;
 
     p {
         font-size: 5rem;

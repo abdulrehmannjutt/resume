@@ -1,6 +1,6 @@
 .skilly{
 
-    margin-top: 10rem;
+    margin-top: 30rem;
 }
 
 .skills-expertise {
@@ -60,3 +60,11 @@ section .skills-content {
     color: $blacky;
 }
 
+@media only screen and (max-width:1020px) {
+
+    .skilly{
+
+        margin-top: 40rem;
+    }
+
+}

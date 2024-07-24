@@ -1,106 +1,111 @@
-.section-1{
+.section-1 {
     @include flexbox-center;
-    flex-wrap: wrap;
-    // gap: 77rem;
+    // flex-wrap: wrap;
+    gap: 18rem;
+
+    margin-top: 10rem;
 }
 
-.s1-c1{
+.s1-c1 {
     margin-left: 6rem;
 }
 
-.s1-c2{
+.s1-c2 {
 
     margin-left: 65rem;
     position: relative;
     @include flexbox-center;
 
-   img{
-    border-radius: 2rem;
-   }
-
-   .expalination1, .expalination2, .expalination3{
-    @include flexbox-center;
-    flex-direction: column;
-    width: 16rem;
-    height: 7rem;
-    border-radius: 1.4rem;
-    background-color: $white;
-
-    p:nth-child(1){
-        color: $purple;
-        font-size: 2rem;
-        font-weight: bold;
+    img {
+        border-radius: 2rem;
     }
 
-    p:nth-child(2){
-        color: $blacky;
-        font-size: 1rem;
-        // font-weight: bold;
+    .expalination1,
+    .expalination2,
+    .expalination3 {
+        @include flexbox-center;
+        flex-direction: column;
+        width: 16rem;
+        height: 7rem;
+        border-radius: 1.4rem;
+        background-color: $white;
+
+        p:nth-child(1) {
+            color: $purple;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        p:nth-child(2) {
+            color: $blacky;
+            font-size: 1rem;
+            // font-weight: bold;
+        }
     }
-   }
 }
 
-.digital{
+.digital {
+
     position: absolute;
     right: 40rem;
-    bottom: 20.5rem;
+    // top: 1rem;
+    // bottom: 1rem;
 }
 
 
 .expalination1 {
     position: absolute;
     right: 30.5rem;
-    bottom: 45rem;
+    bottom: 5rem;
 }
 
 
-.seo{
+.seo {
+
     position: absolute;
-    top: 40.3rem;
+    top: 18.3rem;
     right: 40rem;
 }
 
-.expalination2{
+.expalination2 {
     position: absolute;
 
-    top: 30.9rem;
+    top: 12.9rem;
     right: 50rem;
 
 }
 
-.social{
+.social {
     position: absolute;
     right: 10rem;
-    top: 25rem;
+    top: 1rem;
     // left: 50%;
 }
 
-.expalination3{
+.expalination3 {
     position: absolute;
-    top: 55rem;
+    top: 30rem;
     right: 25rem;
     // left: 50%;
 }
 
-.plus{
+.plus {
 
-    display: flex;
-    justify-content: flex-end;
-    background-color: $white;    
     color: $purple;
 
-    width: 20rem;
-    height: 66rem;
-    
+    position: absolute;
+    bottom: 10rem;
+    right: 15rem;
 
-    
+
+
 }
 
 
 
 
 
-.project{
+.project {
     font-size: $headings;
     font-weight: bold;
     color: $blacky;
@@ -108,11 +113,12 @@
     // @include dot;
 }
 
-.project-intro{
+.project-intro {
 
     font-size: $paragraphs;
     margin-top: 2rem;
     color: $blacky;
+    font-family: $plusjakarta;
 }
 
 
@@ -128,14 +134,14 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 
 
-    &:hover{
+    &:hover {
         background-color: rgb(2, 170, 236);
     }
 
     &::after {
         position: relative;
-        
-        
+
+
     }
 
 
@@ -143,12 +149,12 @@
 }
 
 
-.sec-2{
+.sec-2 {
     // @include flexbox-center;
     position: relative;
 
     // background-color: #5336FF;
-  
+
     // justify-content: space-evenly;
 
     // row-gap: 10%;
@@ -159,7 +165,7 @@
 }
 
 
-.s2-i1{
+.s2-i1 {
 
     position: absolute;
     bottom: 19rem;
@@ -197,7 +203,7 @@
 
 // }
 
-.s2-items{
+.s2-items {
     @include flexbox-center;
     flex-direction: column;
 
@@ -206,7 +212,7 @@
     height: 6rem;
     border-radius: 1rem;
 
-    .head{
+    .head {
         font-size: 2rem;
         font-weight: bold;
         color: $purple;
@@ -218,13 +224,13 @@
 }
 
 
-.sec-3{
+.sec-3 {
     background-color: $white;
     height: 50rem;
     width: 15rem;
 }
 
-.grid-i{
+.grid-i {
 
     background-color: $blacky;
     color: white;
@@ -234,4 +240,139 @@
 
 }
 
+.sec1-i1 {
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    background-color: rgba(255, 198, 71, 0.5);
+    top: 4rem;
+    // left: 30rem;
+    border-radius: 70rem;
+    z-index: -1;
+    filter: blur(8rem);
+}
 
+
+@media only screen and (max-width:1151px) {
+
+    .section-1 {
+        flex-direction: column;
+    }
+
+    .skilly {
+
+        margin-top: 60rem;
+    }
+
+    .digital {
+        right: 24rem;
+
+    }
+
+    .digital-img {
+        width: 210px;
+    }
+
+    .expalination1,
+    .expalination2,
+    .expalination3 {
+        width: 10rem;
+    }
+
+    .expalination1 {
+        right: 16.5rem;
+        bottom: 3rem;
+    }
+
+    .seo {
+        top: 13.3rem;
+        right: 25rem;
+    }
+
+    .seo-img {
+        width: 150px;
+    }
+
+    .expalination2 {
+        top: 8.9rem;
+        right: 31rem;
+    }
+
+    .social {
+        right: 3rem;
+        top: 1rem;
+    }
+
+    .social-img {
+        width: 200px;
+    }
+
+    .expalination3 {
+        top: 21rem;
+        right: 16rem;
+    }
+}
+
+
+
+@media only screen and (max-width:660px) {
+
+
+
+    .digital {
+        right: 33rem;
+    }
+
+    .digital-img {
+        width: 120px;
+    }
+
+    .expalination1,
+    .expalination2,
+    .expalination3 {
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .expalination1 {
+        right: 24.5rem;
+        bottom: 1rem;
+    }
+
+    .seo {
+        top: 7.3rem;
+        right: 33rem;
+    }
+
+    .seo-img {
+        width: 74px;
+    }
+
+    .expalination2 {
+        top: 4.9rem;
+        right: 35rem;
+    }
+
+    .social {
+        right: 21rem;
+        top: 1rem;
+    }
+
+    .social-img {
+        width: 110px;
+    }
+
+    .expalination3 {
+        top: 11rem;
+        right: 24rem;
+    }
+    
+    .plus{
+    bottom: 4rem;
+    right: 21rem;
+    }
+
+    .skills {
+        width: 29.7rem;
+    }
+}
