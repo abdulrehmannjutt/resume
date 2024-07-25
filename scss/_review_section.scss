@@ -32,3 +32,11 @@
     margin-top: 2rem;
     font-weight: bold;
 }
+
+
+@media (max-width:430px) {
+    
+    .review1, .review2{
+        font-size: min(1.7rem, 3.9vw);
+    }
+}

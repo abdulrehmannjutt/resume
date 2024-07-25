@@ -163,10 +163,34 @@ footer {
 
 }
 
-@media (max-width:425px) {
+@media (max-width:430px) {
     
     .footer2{
         display: inline-block;
+    }
+
+    .footer1-1 {
+        position: relative;
+        font-size: min(5rem, 11vw);
+        font-weight: bold;
+    }
+
+    .footer1 .footer1-2 {
+        margin-top: 1rem;
+        font-size: min(1.7rem ,2vw);
+    }
+
+    .footer1 .footer1-3 {
+        margin-top: 1rem;
+        font-size: min(1.7rem ,2vw);
+    }
+
+    .footer2 label {
+        font-size: min(1.7rem, 2.5vw);
+    }
+
+    .footer3 label {
+        font-size: min(1.7rem, 2.6vw);
     }
 }
 

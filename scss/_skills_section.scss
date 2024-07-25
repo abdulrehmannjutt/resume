@@ -68,3 +68,10 @@ section .skills-content {
     }
 
 }
+
+
+@media (max-width:430px) {
+    .skills-expertise{
+        font-size: min(5rem, 11vw);
+    }
+}

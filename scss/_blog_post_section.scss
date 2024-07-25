@@ -190,3 +190,28 @@ section .blogs-container-2 {
 
     margin-top: 2rem;
 }
+
+
+@media (min-width:2560px) {
+    .blog-post1{
+        justify-content: center;
+        gap: 29%;
+    }
+}
+
+
+@media (max-width:430px) {
+    .blog-post1 p{
+        font-size: 4rem;
+    }
+
+
+    .blog_post1, .blog_post2, .blog_post3{
+        width: 90%;
+        height: auto;
+    }
+
+    .blog-content2{
+        font-size: (2rem , 4.6vw);
+    }
+}

@@ -5,7 +5,7 @@ header {
 .container-good-morning {
   display: flex;
   justify-content: space-between;
-  font-size: min(1.7rem, 1vw);
+  font-size: min(1.7rem, 1.5vw);
   padding: 2rem 0rem;
 }
 
@@ -51,7 +51,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: min(1.7rem, 1vw);
+  font-size: min(1.7rem, 1.5vw);
   gap: 6rem;
   list-style-type: none;
   margin-top: 0rem;
@@ -90,7 +90,7 @@ a:hover::after {
   border-radius: 3rem;
   color: white;
   cursor: pointer;
-  font-size: min(1.7rem, 1vw);
+  font-size: min(1.7rem, 1.5vw);
 }
 .hire-me:hover {
   background-color: rgb(2, 170, 236);
@@ -157,6 +157,18 @@ main {
   filter: blur(8rem);
 }
 
+.i2 {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  background-color: rgba(255, 198, 71, 0.5);
+  top: 4rem;
+  left: 30rem;
+  border-radius: 70rem;
+  z-index: -1;
+  filter: blur(8rem);
+}
+
 .intro {
   color: #282C2F;
   font-size: 1.7rem;
@@ -179,6 +191,9 @@ main {
     width: 70%;
     height: auto;
   }
+  .i1 {
+    height: 25rem;
+  }
 }
 @media (max-width: 768px) {
   .intro {
@@ -190,6 +205,19 @@ main {
     font-size: min(1.7rem, 2.2vw);
     font-weight: bolder;
     color: #5336FF;
+  }
+}
+@media (max-width: 430px) {
+  .i1 {
+    height: 15rem;
+    top: 3rem;
+    right: 18rem;
+  }
+  .i2 {
+    width: 15rem;
+    height: 15rem;
+    top: 4rem;
+    left: 6rem;
   }
 }
 .section-1 {
@@ -289,7 +317,7 @@ main {
 }
 
 .project-intro {
-  font-size: min(1.7rem, 1vw);
+  font-size: min(1.7rem, 1.5vw);
   margin-top: 2rem;
   color: #282C2F;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -454,6 +482,12 @@ main {
     width: 29.7rem;
   }
 }
+@media only screen and (max-width: 430px) {
+  .expalination1, .expalination2, .expalination3 {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 .skilly {
   margin-top: 30rem;
 }
@@ -512,6 +546,11 @@ section .skills-content {
 @media only screen and (max-width: 1020px) {
   .skilly {
     margin-top: 40rem;
+  }
+}
+@media (max-width: 430px) {
+  .skills-expertise {
+    font-size: min(5rem, 11vw);
   }
 }
 .work-projects {
@@ -629,6 +668,13 @@ section .skills-content {
     margin-top: 2rem;
   }
 }
+@media (max-width: 430px) {
+  .w-p {
+    display: flex;
+    justify-content: center;
+    font-size: min(1.7rem, 3.9vw);
+  }
+}
 .l-p {
   display: flex;
   justify-content: center;
@@ -679,6 +725,11 @@ ul li:hover {
   margin-right: 2rem;
 }
 
+@media (max-width: 430px) {
+  .l-p {
+    font-size: min(5rem, 11vw);
+  }
+}
 .review-section {
   margin-top: 10rem;
   display: flex;
@@ -707,6 +758,11 @@ ul li:hover {
   font-weight: bold;
 }
 
+@media (max-width: 430px) {
+  .review1, .review2 {
+    font-size: min(1.7rem, 3.9vw);
+  }
+}
 .blog-post {
   margin-top: 5rem;
 }
@@ -835,6 +891,24 @@ section .blogs-container-2 {
   margin-top: 2rem;
 }
 
+@media (min-width: 2560px) {
+  .blog-post1 {
+    justify-content: center;
+    gap: 29%;
+  }
+}
+@media (max-width: 430px) {
+  .blog-post1 p {
+    font-size: 4rem;
+  }
+  .blog_post1, .blog_post2, .blog_post3 {
+    width: 90%;
+    height: auto;
+  }
+  .blog-content2 {
+    font-size: 2rem, 4.6vw;
+  }
+}
 footer {
   background-color: #282C2F;
   color: #FFFFFF;
@@ -863,13 +937,13 @@ footer {
 }
 .footer1 .footer1-2 {
   margin-top: 1rem;
-  font-size: min(1.7rem, 1vw);
+  font-size: min(1.7rem, 1.5vw);
 }
 .footer1 .footer1-2-2 {
   margin-top: 2rem;
 }
 .footer1 .footer1-3 {
-  font-size: min(1.7rem, 1vw);
+  font-size: min(1.7rem, 1.5vw);
   margin-top: 1rem;
   display: flex;
 }
@@ -891,7 +965,7 @@ footer {
   margin-top: 5rem;
 }
 .footer2 label {
-  font-size: min(1.7rem, 1vw);
+  font-size: min(1.7rem, 1.5vw);
 }
 .footer2 input {
   width: 100%;
@@ -912,7 +986,7 @@ footer {
   flex-wrap: wrap;
 }
 .footer3 label {
-  font-size: min(1.7rem, 1vw);
+  font-size: min(1.7rem, 1.5vw);
 }
 .footer3 textarea {
   width: 100%;
@@ -971,9 +1045,28 @@ footer {
   filter: blur(8rem);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .footer2 {
     display: inline-block;
+  }
+  .footer1-1 {
+    position: relative;
+    font-size: min(5rem, 11vw);
+    font-weight: bold;
+  }
+  .footer1 .footer1-2 {
+    margin-top: 1rem;
+    font-size: min(1.7rem, 2vw);
+  }
+  .footer1 .footer1-3 {
+    margin-top: 1rem;
+    font-size: min(1.7rem, 2vw);
+  }
+  .footer2 label {
+    font-size: min(1.7rem, 2.5vw);
+  }
+  .footer3 label {
+    font-size: min(1.7rem, 2.6vw);
   }
 }
 * {
@@ -984,6 +1077,7 @@ footer {
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
