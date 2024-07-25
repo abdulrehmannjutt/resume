@@ -128,6 +128,13 @@ a:hover::after {
     margin-left: 20rem;
     font-size: 2rem;
   }
+  .container-good-morning {
+    font-size: min(1.7rem, 2.5vw);
+  }
+  .logo {
+    font-size: min(5rem, 6vw);
+    font-weight: bolder;
+  }
 }
 @media (max-width: 320px) {
   .menu-icon {
@@ -226,11 +233,11 @@ main {
 @media (max-width: 768px) {
   .intro {
     color: #282C2F;
-    font-size: min(1.7rem, 2.2vw);
+    font-size: min(1.7rem, 2.5vw);
     font-family: "Plus Jakarta Sans", sans-serif;
   }
   .story {
-    font-size: min(1.7rem, 2.2vw);
+    font-size: min(1.7rem, 2.5vw);
     font-weight: bolder;
     color: #5336FF;
   }
@@ -246,6 +253,13 @@ main {
     height: 15rem;
     top: 4rem;
     left: 6rem;
+  }
+  .designation {
+    font-size: min(3rem, 4vw);
+  }
+  .name {
+    font-size: min(8rem, 6.555556vw);
+    font-weight: bolder;
   }
 }
 .section-1 {
@@ -515,6 +529,15 @@ main {
     width: 5rem;
     height: 5rem;
   }
+  .project {
+    font-size: min(5rem, 5.4vw);
+  }
+  .project-intro {
+    font-size: min(1.7rem, 2.7vw);
+    margin-top: 2rem;
+    color: #282C2F;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
 }
 .skilly {
   margin-top: 30rem;
@@ -579,6 +602,9 @@ section .skills-content {
 @media (max-width: 430px) {
   .skills-expertise {
     font-size: min(5rem, 11vw);
+  }
+  .skilly {
+    margin-top: 30rem;
   }
 }
 .work-projects {

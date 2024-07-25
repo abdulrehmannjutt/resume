@@ -116,14 +116,14 @@ main {
     .intro {
 
         color: $blacky;
-        font-size: min(1.7rem, 2.2vw);
+        font-size: min(1.7rem, 2.5vw);
         font-family: $plusjakarta;
         // font-size: $paragraphs;
     
     }
     
     .story {
-        font-size: min(1.7rem, 2.2vw);
+        font-size: min(1.7rem, 2.5vw);
         font-weight: bolder;
     
         color: $purple;
@@ -146,4 +146,15 @@ main {
         top: 4rem;
         left: 6rem;
     }
+
+    .designation {
+        font-size: min(3rem, 4vw);
+    }
+    
+    .name {
+        font-size: min(8rem, 6.555556vw);
+        font-weight: bolder;
+    }
+    
+
 }

@@ -186,6 +186,16 @@ header nav ul {
         font-size: 2rem;
     }
 
+    .container-good-morning {
+        
+        font-size: min(1.7rem, 2.5vw);
+    }
+
+    .logo {
+        font-size: min(5rem, 6vw);
+        font-weight: bolder;
+    } 
+
 }
 
 @media (max-width:320px) {

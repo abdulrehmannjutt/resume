@@ -383,4 +383,16 @@
         width: 5rem;
         height: 5rem;
     }
+
+    .project{
+        font-size: min(5rem, 5.4vw);
+
+    }
+
+    .project-intro {
+        font-size: min(1.7rem, 2.7vw);
+        margin-top: 2rem;
+        color: #282C2F;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
 }
