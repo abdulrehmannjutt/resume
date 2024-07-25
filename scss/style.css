@@ -1,5 +1,11 @@
 header {
   padding: 0 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: rgb(243, 241, 241);
 }
 
 .container-good-morning {
@@ -52,7 +58,7 @@ header nav ul {
   justify-content: center;
   align-items: center;
   font-size: min(1.7rem, 1.5vw);
-  gap: 6rem;
+  gap: 3rem;
   list-style-type: none;
   margin-top: 0rem;
 }
@@ -99,11 +105,33 @@ a:hover::after {
   position: relative;
 }
 
+.menu-icon {
+  font-size: 0rem;
+}
+
 @media only screen and (max-width: 768px) {
   header li {
     display: none;
   }
-  label {
+  .menu-icon {
+    margin-left: 50rem;
+    font-size: 2rem;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+}
+@media (max-width: 430px) {
+  .menu-icon {
+    margin-left: 20rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .menu-icon {
+    margin-left: 15rem;
     font-size: 2rem;
   }
 }
@@ -113,7 +141,7 @@ main {
   align-items: center;
   gap: 13rem;
   margin: 0 5rem;
-  margin-top: 2rem;
+  margin-top: 15rem;
 }
 
 .designation {
@@ -729,6 +757,143 @@ ul li:hover {
   .l-p {
     font-size: min(5rem, 11vw);
   }
+  .latest-projects {
+    position: relative;
+  }
+  .projects-container {
+    display: grid;
+    /* justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+  }
+  .project-i1 {
+    width: 125px;
+    height: 204px;
+    position: absolute;
+    left: 5rem;
+  }
+  .project-i2 {
+    width: 169px;
+    height: 98px;
+    position: absolute;
+    right: 7rem;
+  }
+  .project-i3 {
+    width: 166px;
+    height: 202px;
+    position: absolute;
+    bottom: -30rem;
+    left: 19rem;
+  }
+  .project-i4 {
+    width: 171px;
+    height: 132px;
+    position: absolute;
+    top: 60rem;
+    right: 7rem;
+  }
+  .project-i5 {
+    width: 132px;
+    height: 149px;
+    position: absolute;
+    right: 25rem;
+    top: 49rem;
+  }
+  .project-i6 {
+    width: 122px;
+    height: 127px;
+    position: absolute;
+    top: 65rem;
+    right: 25rem;
+  }
+  .review-section {
+    margin-top: 40rem;
+  }
+}
+@media (max-width: 375px) {
+  .project-i1 {
+    width: 125px;
+    height: 204px;
+    position: absolute;
+    left: 5rem;
+  }
+  .project-i2 {
+    width: 169px;
+    height: 98px;
+    position: absolute;
+    right: 2rem;
+  }
+  .project-i3 {
+    width: 166px;
+    height: 202px;
+    position: absolute;
+    bottom: -30rem;
+    left: 19rem;
+  }
+  .project-i4 {
+    width: 171px;
+    height: 132px;
+    position: absolute;
+    top: 60rem;
+    right: 1rem;
+  }
+  .project-i5 {
+    width: 132px;
+    height: 149px;
+    position: absolute;
+    right: 20rem;
+    top: 49rem;
+  }
+  .project-i6 {
+    width: 122px;
+    height: 127px;
+    position: absolute;
+    top: 65rem;
+    right: 20rem;
+  }
+}
+@media (max-width: 320px) {
+  .project-i1 {
+    width: 125px;
+    height: 204px;
+    position: absolute;
+    left: 1rem;
+  }
+  .project-i2 {
+    width: 169px;
+    height: 98px;
+    position: absolute;
+    right: 1rem;
+  }
+  .project-i3 {
+    width: 166px;
+    height: 202px;
+    position: absolute;
+    bottom: -30rem;
+    left: 14rem;
+  }
+  .project-i4 {
+    width: 171px;
+    height: 132px;
+    position: absolute;
+    top: 58rem;
+    right: 1rem;
+  }
+  .project-i5 {
+    width: 132px;
+    height: 149px;
+    position: absolute;
+    right: 19rem;
+    top: 47rem;
+  }
+  .project-i6 {
+    width: 122px;
+    height: 127px;
+    position: absolute;
+    top: 63rem;
+    right: 19rem;
+  }
 }
 .review-section {
   margin-top: 10rem;
@@ -761,6 +926,9 @@ ul li:hover {
 @media (max-width: 430px) {
   .review1, .review2 {
     font-size: min(1.7rem, 3.9vw);
+  }
+  .review-section {
+    margin-top: 55rem;
   }
 }
 .blog-post {

@@ -1,4 +1,4 @@
-.l-p{
+.l-p {
 
     @include flexbox-center;
     font-size: 5rem;
@@ -7,7 +7,7 @@
     margin-top: 9rem;
 }
 
-ul{
+ul {
     @include flexbox-center;
     flex-wrap: wrap;
 
@@ -16,41 +16,41 @@ ul{
     font-size: 2rem;
     gap: 6rem;
 
-    li:hover{
+    li:hover {
         color: $purple;
         cursor: pointer;
     }
 }
 
 
-.projects-container{
+.projects-container {
 
     margin-top: 5rem;
     @include flexbox-center;
     flex-wrap: wrap;
 
-    img{
+    img {
         border-radius: 1rem;
     }
 
-    .projects-i2{
+    .projects-i2 {
         margin: 0 2rem;
 
-        .projects-i2-2{
+        .projects-i2-2 {
             margin-top: 1.4rem;
 
-           
+
         }
     }
-    
+
 }
 
 
-.img-margin{
+.img-margin {
     margin-left: 2rem;
 }
 
-.img-margin1{
+.img-margin1 {
     margin-right: 2rem;
 }
 
@@ -71,15 +71,207 @@ ul{
 // }
 
 
-@media only screen and (max-width:1110){
+@media only screen and (max-width:1110) {
     // .w-p-2 {
     //     margin-left: 0rem;
-        
+
     // }
 }
 
 @media (max-width:430px) {
-    .l-p{
+    .l-p {
         font-size: min(5rem, 11vw);
+
+    }
+
+    .latest-projects {
+        position: relative;
+    }
+
+    .projects-container {
+
+        display: grid;
+        /* justify-content: center;
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+
+        // justify-content:safe;
+        // align-items: none;
+        flex-wrap: nowrap;
+        // display:grid;
+    }
+
+    .project-i1 {
+        width: 125px;
+        height: 204px;
+
+
+        position: absolute;
+        left: 5rem;
+    }
+
+    .project-i2 {
+        width: 169px;
+        height: 98px;
+
+        position: absolute;
+        right: 7rem;
+    }
+
+    .project-i3 {
+        width: 166px;
+        height: 202px;
+
+        position: absolute;
+        bottom: -30rem;
+        left: 19rem;
+    }
+
+    .project-i4 {
+        width: 171px;
+        height: 132px;
+
+        position: absolute;
+        top: 60rem;
+        right: 7rem;
+    }
+
+    .project-i5 {
+        width: 132px;
+        height: 149px;
+
+        position: absolute;
+        right: 25rem;
+        top: 49rem;
+    }
+
+    .project-i6 {
+        width: 122px;
+        height: 127px;
+
+        position: absolute;
+        top: 65rem;
+        right: 25rem;
+    }
+
+    .review-section {
+        margin-top: 40rem;
     }
 }
+
+@media (max-width:375px) {
+   
+    .project-i1 {
+        width: 125px;
+        height: 204px;
+
+
+        position: absolute;
+        left: 5rem;
+    }
+
+    .project-i2 {
+        width: 169px;
+        height: 98px;
+
+        position: absolute;
+        right: 2rem;
+    }
+
+    .project-i3 {
+        width: 166px;
+        height: 202px;
+
+        position: absolute;
+        bottom: -30rem;
+        left: 19rem;
+    }
+
+    .project-i4 {
+        width: 171px;
+        height: 132px;
+
+        position: absolute;
+        top: 60rem;
+        right: 1rem;
+    }
+
+    .project-i5 {
+        width: 132px;
+        height: 149px;
+
+        position: absolute;
+        right: 20rem;
+        top: 49rem;
+    }
+
+    .project-i6 {
+        width: 122px;
+        height: 127px;
+
+        position: absolute;
+        top: 65rem;
+        right: 20rem;
+    }
+
+   
+}
+
+@media (max-width:320px) {
+   
+    .project-i1 {
+        width: 125px;
+        height: 204px;
+
+
+        position: absolute;
+        left: 1rem;
+    }
+
+    .project-i2 {
+        width: 169px;
+        height: 98px;
+
+        position: absolute;
+        right: 1rem;
+    }
+
+    .project-i3 {
+        width: 166px;
+        height: 202px;
+
+        position: absolute;
+        bottom: -30rem;
+        left: 14rem;
+    }
+
+    .project-i4 {
+        width: 171px;
+        height: 132px;
+
+        position: absolute;
+        top: 58rem;
+        right: 1rem;
+    }
+
+    .project-i5 {
+        width: 132px;
+        height: 149px;
+
+        position: absolute;
+        right: 19rem;
+        top: 47rem;
+    }
+
+    .project-i6 {
+        width: 122px;
+        height: 127px;
+
+        position: absolute;
+        top: 63rem;
+        right: 19rem;
+    }
+
+   
+}
+
