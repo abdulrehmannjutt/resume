@@ -10,7 +10,6 @@
     background-image: url('/images/Group\ 2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    // background-size: cover;
 
     img{
      margin-top: 2rem;   
@@ -37,9 +36,6 @@
 }
 
 .w-p-2{
-
-    // @include flex-column;
-
     margin-left: 15rem;
     margin-bottom: 5rem;
     font-size: 2rem;
@@ -134,7 +130,7 @@
     }
 }
 
-@media (max-width:430px) {
+@media (max-width: $iphone14promax) {
     .w-p{
         display: flex;
         justify-content: center;

@@ -88,10 +88,7 @@ main {
 
 
 
-@media only screen and (max-width: 768px){
-
-   
-
+@media only screen and (max-width: $tablet){
     
     main{
         flex-direction: column;
@@ -108,17 +105,11 @@ main {
         height: 25rem;
     }
 
-
-}
-
-@media (max-width:768px) {
-    
     .intro {
 
         color: $blacky;
         font-size: min(1.7rem, 2.5vw);
         font-family: $plusjakarta;
-        // font-size: $paragraphs;
     
     }
     
@@ -128,10 +119,11 @@ main {
     
         color: $purple;
     }
+
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: $iphone14promax) {
     
     .i1{
         height: 15rem;

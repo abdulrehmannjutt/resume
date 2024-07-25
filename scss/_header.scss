@@ -147,7 +147,7 @@ header nav ul {
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: $tablet){
 
    
 
@@ -177,7 +177,7 @@ header nav ul {
 }
 
 
-@media (max-width:430px) {
+@media (max-width: $iphone14promax) {
     
     .menu-icon{
         // display: flex;
@@ -198,7 +198,7 @@ header nav ul {
 
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobileS) {
     
     .menu-icon{
         // display: flex;

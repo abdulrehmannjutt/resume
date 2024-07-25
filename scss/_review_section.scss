@@ -34,7 +34,7 @@
 }
 
 
-@media (max-width:430px) {
+@media (max-width: $iphone14promax) {
     
     .review1, .review2{
         font-size: min(1.7rem, 3.9vw);

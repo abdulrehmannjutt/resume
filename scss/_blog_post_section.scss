@@ -192,7 +192,7 @@ section .blogs-container-2 {
 }
 
 
-@media (min-width:2560px) {
+@media (min-width: $fourk) {
     .blog-post1{
         justify-content: center;
         gap: 29%;
@@ -200,7 +200,7 @@ section .blogs-container-2 {
 }
 
 
-@media (max-width:430px) {
+@media (max-width: $iphone14promax) {
     .blog-post1 p{
         font-size: 4rem;
     }

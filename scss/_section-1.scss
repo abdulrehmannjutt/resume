@@ -377,11 +377,26 @@
     }
 }
 
-@media only screen and (max-width:430px) {
+@media only screen and (max-width: $iphone14promax) {
     
-    .expalination1, .expalination2, .expalination3{
-        width: 5rem;
-        height: 5rem;
+    .expalination1{
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .expalination2{
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .expalination3{
+        width: 10rem;
+        height: 4rem;
+    }
+
+    .s1-c2 .expalination1, .s1-c2 .expalination2, .s1-c2 .expalination3 {
+        width: 10rem;
+        height: 4rem;
     }
 
     .project{

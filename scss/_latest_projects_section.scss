@@ -45,7 +45,6 @@ ul {
 
 }
 
-
 .img-margin {
     margin-left: 2rem;
 }
@@ -53,22 +52,6 @@ ul {
 .img-margin1 {
     margin-right: 2rem;
 }
-
-// .projects-i1{
-//     width: 25rem;
-//     height: 35rem;
-//     background-color: rgba(83, 54, 255, 0.5);
-//     filter: blur(8rem);
-
-// }
-
-// .projects-i2{
-//     width: 25rem;
-//     height: 25rem;
-//     background-color: rgba(255, 198, 71, 0.5);
-//     filter: blur(8rem);
-
-// }
 
 
 @media only screen and (max-width:1110) {
@@ -78,7 +61,7 @@ ul {
     // }
 }
 
-@media (max-width:430px) {
+@media (max-width: $iphone14promax) {
     .l-p {
         font-size: min(5rem, 11vw);
 
@@ -159,7 +142,7 @@ ul {
     }
 }
 
-@media (max-width:375px) {
+@media (max-width: $mobileM) {
    
     .project-i1 {
         width: 125px;
@@ -217,7 +200,7 @@ ul {
    
 }
 
-@media (max-width:320px) {
+@media (max-width: $mobileS) {
    
     .project-i1 {
         width: 125px;

@@ -229,8 +229,6 @@ main {
   .i1 {
     height: 25rem;
   }
-}
-@media (max-width: 768px) {
   .intro {
     color: #282C2F;
     font-size: min(1.7rem, 2.5vw);
@@ -525,9 +523,21 @@ main {
   }
 }
 @media only screen and (max-width: 430px) {
-  .expalination1, .expalination2, .expalination3 {
-    width: 5rem;
-    height: 5rem;
+  .expalination1 {
+    width: 10rem;
+    height: 4rem;
+  }
+  .expalination2 {
+    width: 10rem;
+    height: 4rem;
+  }
+  .expalination3 {
+    width: 10rem;
+    height: 4rem;
+  }
+  .s1-c2 .expalination1, .s1-c2 .expalination2, .s1-c2 .expalination3 {
+    width: 10rem;
+    height: 4rem;
   }
   .project {
     font-size: min(5rem, 5.4vw);
