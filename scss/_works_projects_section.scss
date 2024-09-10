@@ -40,6 +40,7 @@
     margin-bottom: 5rem;
     font-size: 2rem;
     color: $white;
+    min-width: 41%;
 
     p:nth-child(1){
         font-weight: bold;
@@ -103,6 +104,23 @@
     margin-top: 2rem;
     width: 22.7rem;
     height: 4.7rem;
+}
+
+.carousel-slide {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.c2{
+    margin-top: 48px;
+}
+
+.c4{
+    margin-top: 48px;
 }
 
 

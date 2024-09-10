@@ -1,211 +1,215 @@
-header{
-    // margin-left: 5rem;
-    // margin-right: 5rem;
-    padding: 0 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-
-    background-color: rgb(243, 241, 241);
-    // background-color: rgb(255, 255, 255);
-    
-    
+header {
+  padding: 0 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: rgb(243, 241, 241);
 }
 
 .container-good-morning {
-    // @include flexbox-center;
-    display: flex;
-    justify-content: space-between;
-
-    font-size: $paragraphs;
-
-    // gap: 84.5%;
-    // width: 100%;
-    padding: 2rem 0rem;
-
+  display: flex;
+  justify-content: space-between;
+  font-size: $paragraphs;
+  padding: 2rem 0rem;
 }
 
-.good-morning-1{
-
-    @include flexbox-center
-    
-  
+.good-morning-1 {
+  @include flexbox-center;
 }
 
-.good-morning-2{
-    display: flex;
-    gap: 1rem;
+.good-morning-2 {
+  display: flex;
+  gap: 1rem;
 }
 
-.g-i1, .g-i2, .g-i3{
-    
-
-   @include flexbox-center;
-    height: 2rem;
-    width: 2rem;
-    background-color: #E6E6E6;
-    color: #E6E6E6;
-    border-radius: 2rem;
-    
+.g-i1,
+.g-i2,
+.g-i3 {
+  @include flexbox-center;
+  height: 2rem;
+  width: 2rem;
+  background-color: #e6e6e6;
+  color: #e6e6e6;
+  border-radius: 2rem;
 }
-
 
 nav {
-
-
-
-    @include space-between;
-    padding: 1rem 0;
-
+  @include space-between;
+  padding: 1rem 0;
 }
 
-
-
 .logo {
+  font-size: $headings;
+  font-weight: bolder;
 
-    font-size: $headings;    
-    font-weight: bolder;
-
-    &::after {
-        @include dot;
-    }
-
-
+  &::after {
+    @include dot;
+  }
 }
 
 header nav ul {
-
-    @include flexbox-center;
-    font-size: $paragraphs;
-    gap: 3rem;
-    // width: 50%;
-    list-style-type: none;
-    margin-top: 0rem;
-
-    label {
-        color: black;
-        // display: none;
-        font-size: 0rem;
-    }
+  @include flexbox-center;
+  font-size: $paragraphs;
+  gap: 3rem;
+  list-style-type: none;
+  margin-top: 0rem;
 }
 
- a {
+a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  cursor: pointer;
 
-    text-decoration: none;
-    color: black;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 0.2rem;
+    // background: blue;
+    background: rgb(2, 170, 236);
+    transition: transform 0.3s;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.hire-me {
+  background-color: #5336ff;
+  padding: 1.3rem 3.8rem;
+  border-radius: 3rem;
+  color: white;
+  cursor: pointer;
+  font-size: $paragraphs;
+
+  &:hover {
+    background-color: rgb(2, 170, 236);
+  }
+
+  &::after {
     position: relative;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: $blacky;
+  z-index: 1001;
+  transition: left 0.3s ease;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+
+  li {
+    font-size: 10px;
+  }
+}
+
+.logo-mb {
+  display: flex;
+  justify-content: center;
+  // margin-bottom: 20px;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.sidebar-nav-links {
+  margin-top: 61px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sidebar-nav-links li a {
+  text-decoration: none;
+  color: $white;
+  font-size: 1.2rem;
+}
+
+.sidebar-nav-links .hire-me {
+  padding: 1.1rem 0.5rem;
+}
+
+.background.navActive {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav.navActive {
+  left: 0;
+}
+
+@media only screen and (max-width: $tablet) {
+  header nav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
     cursor: pointer;
-
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 100%;
-        height: .2rem;
-        // background: blue;
-        background: rgb(2, 170, 236);
-        transition: transform 0.3s;
-        transform: scaleX(0);
-        transform-origin: right;
-    }
-
-    &:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
-    }
-
+  }
 }
-
-.hire-me{
-    background-color: #5336FF;
-    padding: 1.3rem 3.8rem;
-    border-radius: 3rem;
-    color: white;
-    cursor: pointer;
-    font-size: $paragraphs;
-
-
-    &:hover{
-        background-color: rgb(2, 170, 236);
-    }
-
-    &::after {
-        position: relative;
-        
-        
-    }
-
-
-
-}
-
-.menu-icon{
-    font-size: 0rem;
-}
-
-
-@media only screen and (max-width: $tablet){
-
-   
-
-    
-    header{
-
-        li{
-            display: none;
-        }
-    }
-    
-    .menu-icon{
-        // display: flex;
-        // justify-content: flex-end;
-        margin-left: 50rem;
-        font-size: 2rem;
-    }
-
-    .hamburger{
-        display: flex;
-        justify-content: flex-end;
-        align-content: flex-end;
-    }
-
-    
-
-}
-
 
 @media (max-width: $iphone14promax) {
-    
-    .menu-icon{
-        // display: flex;
-        // justify-content: flex-end;
-        margin-left: 20rem;
-        font-size: 2rem;
-    }
+  .menu-icon {
+    display: flex;
+  }
 
-    .container-good-morning {
-        
-        font-size: min(1.7rem, 2.5vw);
-    }
+  .container-good-morning {
+    font-size: min(1.7rem, 2.5vw);
+  }
 
-    .logo {
-        font-size: min(5rem, 6vw);
-        font-weight: bolder;
-    } 
-
+  .logo {
+    font-size: min(5rem, 6vw);
+    font-weight: bolder;
+  }
 }
 
-@media (max-width:$mobileS) {
-    
-    .menu-icon{
-        // display: flex;
-        // justify-content: flex-end;
-        margin-left: 15rem;
-        font-size: 2rem;
-    }
-
+@media (max-width: $mobileS) {
+  .menu-icon {
+    display: flex;
+  }
 }
 

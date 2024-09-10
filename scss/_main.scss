@@ -1,152 +1,123 @@
 main {
-
-    @include flexbox-center;
-    gap: 13rem;
-    margin: 0 5rem;
-    margin-top: 15rem;
+  @include flexbox-center;
+  gap: 13rem;
+  margin: 0 5rem;
+  margin-top: 15rem;
 }
 
-
 .designation {
-
-    font-size: min(3rem, 2.083333333vw);
-
+  font-size: min(3rem, 2.083333333vw);
 }
 
 .name {
+  font-size: min(8rem, 5.555555556vw);
+  font-weight: bolder;
 
-    font-size: min(8rem, 5.555555556vw);
-    font-weight: bolder;
-
-    &::after {
-
-        @include dot;
-    }
+  &::after {
+    @include dot;
+  }
 }
 
-
-.abdul{
-
-    width: 90%;
-    height: auto;
-
-
+.abdul {
+  width: 90%;
+  height: auto;
 }
 
-.m-2{
-    @include flexbox-center;
-    // margin-right: 22rem;
+.m-2 {
+  @include flexbox-center;
+  // margin-right: 22rem;
 }
 
-.img-div{
-    position: relative;
+.img-div {
+  position: relative;
 }
 
-.i1{
-    position: absolute;
-    width: 25rem;
-    height: 35rem;
-    background-color: rgba(83, 54, 255, 0.5);
-    top: 13rem;
-    right: 30rem;
-    border-radius: 70rem;
-    z-index: -1;
-    filter: blur(8rem);
-
-
+.i1 {
+  position: absolute;
+  width: 25rem;
+  height: 35rem;
+  background-color: rgba(83, 54, 255, 0.5);
+  top: 13rem;
+  right: 30rem;
+  border-radius: 70rem;
+  z-index: -1;
+  filter: blur(8rem);
 }
 
-.i2{
-    position: absolute;
-    width: 25rem;
-    height: 25rem;
-    background-color: rgba(255, 198, 71, 0.5);
-    top: 4rem;
-    left: 30rem;
-    border-radius: 70rem;
-    z-index: -1;
-    filter: blur(8rem);
-
-
+.i2 {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  background-color: rgba(255, 198, 71, 0.5);
+  top: 4rem;
+  left: 30rem;
+  border-radius: 70rem;
+  z-index: -1;
+  filter: blur(8rem);
 }
 
 .intro {
-
-    color: $blacky;
-    font-size: 1.7rem;
-    font-family: $plusjakarta;
-    // font-size: $paragraphs;
-
+  color: $blacky;
+  font-size: 1.7rem;
+  font-family: $plusjakarta;
 }
 
 .story {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
+  font-weight: bolder;
+
+  color: $purple;
+}
+
+@media only screen and (max-width: $tablet) {
+  main {
+    flex-direction: column;
+    align-items: normal;
+    gap: 0rem;
+
+    .abdul {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  .i1 {
+    height: 25rem;
+  }
+
+  .intro {
+    color: $blacky;
+    font-size: min(1.7rem, 2.5vw);
+    font-family: $plusjakarta;
+  }
+
+  .story {
+    font-size: min(1.7rem, 2.5vw);
     font-weight: bolder;
-
     color: $purple;
+  }
 }
-
-
-
-@media only screen and (max-width: $tablet){
-    
-    main{
-        flex-direction: column;
-        align-items: normal;
-        gap: 0rem;
-
-        .abdul{
-            width: 70%;
-            height: auto;
-        }
-    }
-
-    .i1{
-        height: 25rem;
-    }
-
-    .intro {
-
-        color: $blacky;
-        font-size: min(1.7rem, 2.5vw);
-        font-family: $plusjakarta;
-    
-    }
-    
-    .story {
-        font-size: min(1.7rem, 2.5vw);
-        font-weight: bolder;
-    
-        color: $purple;
-    }
-
-}
-
 
 @media (max-width: $iphone14promax) {
-    
-    .i1{
-        height: 15rem;
+  .i1 {
+    height: 15rem;
     top: 3rem;
     right: 18rem;
-    }
+  }
 
-    .i2{
+  .i2 {
+    width: 15rem;
+    height: 15rem;
+    top: 4rem;
+    left: 6rem;
+  }
 
-        width: 15rem;
-        height: 15rem;
-        top: 4rem;
-        left: 6rem;
-    }
+  .designation {
+    font-size: min(3rem, 4vw);
+  }
 
-    .designation {
-        font-size: min(3rem, 4vw);
-    }
-    
-    .name {
-        font-size: min(8rem, 6.555556vw);
-        font-weight: bolder;
-    }
-    
-
+  .name {
+    font-size: min(8rem, 6.555556vw);
+    font-weight: bolder;
+  }
 }

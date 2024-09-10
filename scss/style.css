@@ -26,14 +26,16 @@ header {
   gap: 1rem;
 }
 
-.g-i1, .g-i2, .g-i3 {
+.g-i1,
+.g-i2,
+.g-i3 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2rem;
   width: 2rem;
-  background-color: #E6E6E6;
-  color: #E6E6E6;
+  background-color: #e6e6e6;
+  color: #e6e6e6;
   border-radius: 2rem;
 }
 
@@ -62,10 +64,6 @@ header nav ul {
   list-style-type: none;
   margin-top: 0rem;
 }
-header nav ul label {
-  color: black;
-  font-size: 0rem;
-}
 
 a {
   text-decoration: none;
@@ -91,7 +89,7 @@ a:hover::after {
 }
 
 .hire-me {
-  background-color: #5336FF;
+  background-color: #5336ff;
   padding: 1.3rem 3.8rem;
   border-radius: 3rem;
   color: white;
@@ -106,27 +104,97 @@ a:hover::after {
 }
 
 .menu-icon {
-  font-size: 0rem;
+  display: none;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #282C2F;
+  z-index: 1001;
+  transition: left 0.3s ease;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+.mobile-nav li {
+  font-size: 10px;
+}
+
+.logo-mb {
+  display: flex;
+  justify-content: center;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.sidebar-nav-links {
+  margin-top: 61px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sidebar-nav-links li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+.sidebar-nav-links .hire-me {
+  padding: 1.1rem 0.5rem;
+}
+
+.background.navActive {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav.navActive {
+  left: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  header li {
+  header nav ul {
     display: none;
   }
   .menu-icon {
-    margin-left: 50rem;
-    font-size: 2rem;
-  }
-  .hamburger {
     display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 }
 @media (max-width: 430px) {
   .menu-icon {
-    margin-left: 20rem;
-    font-size: 2rem;
+    display: flex;
   }
   .container-good-morning {
     font-size: min(1.7rem, 2.5vw);
@@ -138,8 +206,7 @@ a:hover::after {
 }
 @media (max-width: 320px) {
   .menu-icon {
-    margin-left: 15rem;
-    font-size: 2rem;
+    display: flex;
   }
 }
 main {
@@ -656,6 +723,7 @@ section .skills-content {
   margin-bottom: 5rem;
   font-size: 2rem;
   color: #FFFFFF;
+  min-width: 41%;
 }
 .w-p-2 p:nth-child(1) {
   font-weight: bold;
@@ -715,6 +783,23 @@ section .skills-content {
 }
 .download2::after {
   position: relative;
+}
+
+.carousel-slide {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.c2 {
+  margin-top: 48px;
+}
+
+.c4 {
+  margin-top: 48px;
 }
 
 @media (max-width: 1112px) {
@@ -779,6 +864,16 @@ ul li:hover {
 }
 .projects-container .projects-i2 .projects-i2-2 {
   margin-top: 1.4rem;
+}
+
+.projects-i2-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.projects-i2-2 {
+  display: flex;
+  gap: 20px;
 }
 
 .img-margin {
@@ -1273,6 +1368,26 @@ footer {
     font-size: min(1.7rem, 2.6vw);
   }
 }
+.users-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog::backdrop {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+dialog {
+  padding: 0;
+}
+
+dialog .wrapper {
+  padding: 16px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1286,6 +1401,11 @@ html {
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   overflow-x: hidden;
+}
+
+.no-overflow {
+  overflow-x: none;
+  overflow-y: hidden;
 }/*# sourceMappingURL=style.css.map */

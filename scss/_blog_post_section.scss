@@ -3,29 +3,18 @@
 }
 
 .blog-post1 {
-
     @include flexbox-center;
     justify-content: space-around;
-    // gap: 75rem;
 
     p {
         font-size: 5rem;
         font-weight: bold;
 
-
         &::after{
             @include dot;
         }
-
-
-
     }
-
-
-
-
 }
-
 
 .view-more-post {
     background-color: #5336FF;
@@ -36,19 +25,13 @@
     cursor: pointer;
     font-family: "Plus Jakarta Sans", sans-serif;
 
-
     &:hover {
         background-color: rgb(2, 170, 236);
     }
 
     &::after {
         position: relative;
-
-
     }
-
-
-
 }
 
 .view-more-post {
@@ -72,12 +55,6 @@ section .blogs-container-2 {
     height: 55.8rem;
     border: none;
     border-radius: 1rem;
-    // background-color: #FFFFFF;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    // background-image: url('/images/blog1.jpg');
 
 }
 
@@ -175,11 +152,6 @@ section .blogs-container-2 {
     }
 }
 
-// .blog1{
-
-//     object-fit: cover;
-
-// }
 .blogs-content {
 
     border-radius: 2rem;

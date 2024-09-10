@@ -1,0 +1,16 @@
+.users-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+dialog::backdrop{
+    backdrop-filter: blur(10px);
+}
+dialog {
+    padding: 0;
+}
+
+dialog .wrapper {
+    padding: 16px;
+}
